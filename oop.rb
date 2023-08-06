@@ -10,6 +10,7 @@ class Unicorn
         @fangs = fangs
         @color = "silver"
     end
+
 end
 
 unicorn1 = Unicorn.new("Unitoon", "sharp")
