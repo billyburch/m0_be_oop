@@ -67,7 +67,7 @@ class Dragon
     end
 end
     dragon1 = Dragon.new("Bobby", "Jerry", "green")
- # Everything is getting jumbled in my head right now as I continue to work on this challenge. I not sure how to call the below eat method correctly or what to change in my code above to switch the is_hungry attribute to false because I'm not sure where the argument about how many times the dragon has eaten should be entered. Can that information and condition live in the attributes? I'm not experiencing error messages anymore, but I surely have missed the criteria on this one.  
+ # Ideas and syntax are getting jumbled in my head right now as I continue to work on the oop challenge. I'm not sure how to call the below eat method correctly or what to change in my code above to switch the is_hungry attribute to false because I'm not sure where the argument about how many times the dragon has eaten should be entered. Can that information and condition live in the attributes? I'm not experiencing error messages anymore, but I surely have missed the last criteria on this one.  
     p dragon1.eat(4)
     p dragon1
 
@@ -83,14 +83,21 @@ end
 class Hobbit
     attr_reader :name, :disposition, :age
 
-    def initialize(name, disposition)
+    def initialize(name, disposition, age = "0")
     @name = name
     @disposition = disposition
-    @age = "0"
-    @is_adult = false
+    @age = age
+    @is_adult = age
     @is_old = false
     @has_ring = false
-   
     end
-    
+    # def age_check(age)
+    # if @age >= 33 then p true
+    #     if @age <= 33 then p false
+    # end
 end
+hobbit1 = Hobbit.new("Pip", "Perky", "33")
+# p hobbit1.age_check
+p hobbit1
+
+# Thanks for the caveat on the assignment that it's ok not to know everything or have the code perfect. I am going to go ahead and submit what I have right now, as I need to step away - my productive struggle has become unproductive for the day and I still need to do the self-eval. I think my crux lies with order of syntax and more clearly organizing my code. When I was fresher this morning and afternoon, I was finding success, but after spending too many hours over-thinking things and pushing toward the deadline, I stopped being a productive struggler. Self-eval to follow. 
